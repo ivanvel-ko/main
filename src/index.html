@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="assets/antd.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        {{ message }}
+        <br>
+        <template>
+            <a-button type="primary">Button</a-button>
+          </template>
+        <template>
+          </template>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="assets/antd.min.jd"></script>
+    <script>
+        //import 'ant-design-vue/dist/antd.css';
+        //import { DatePicker } from 'ant-design-vue';
+        //app.use(DatePicker);
+
+        var app = new Vue({
+        el: '#app',
+        data: {
+          message: 'Привет, Vue!'
+        }
+      })
+    </script>
+</body>
+</html>
